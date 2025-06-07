@@ -1,0 +1,21 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: blanchedalmond;
+  background-color: #242424;
+}
+body {
+  margin: 0;
+  place-items: center;
+}
+h1 {
+  font-size: 2em;
+  line-height: 0.5;
+}
+#app {
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
