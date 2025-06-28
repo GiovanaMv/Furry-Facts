@@ -50,30 +50,20 @@ const dogs = [
 <style>
     .dogs {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 18px;
-      margin: 32px 0px 0px;
+      grid-template-columns: repeat(3, 350px);
+      gap: 16px;
+      margin-top: 42px;
+    }
+    .dog{
+        border: solid 1px rgb(253, 226, 184);
+    }
+    img{
+        width: 90%;
     }
 
-      @media (min-width: 768px) and (max-width: 1023px) {
-        .dogs {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
       @media (max-width: 767px) {
         .dogs {
           grid-template-columns: 1fr;
-        }
-      }
-      @media (min-width: 1024px) and (max-width: 1366px) {
-        .dogs {
-          gap: 18px;
-          margin-left: 46px;
-        }
-      }
-      @media (min-width: 768px) and (max-width: 1023px) {
-        .dogs {
-          grid-template-columns: 1fr 1fr;
         }
       }
       @media (min-width: 540px) and (max-width: 720px) {
@@ -81,11 +71,17 @@ const dogs = [
           margin: 12px;
         }
       }
-
-    .dog{
-        border: solid 1px rgb(253, 226, 184);
-    }
-    img{
-        width: 90%;
-    }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .dogs {
+          grid-template-columns: repeat(3, 220px);
+        }
+      }
+      @media (min-width: 1024px) and (max-width: 1366px) {
+        .dogs {
+          margin-left: 24px;
+          gap: 3px;
+          grid-template-columns: repeat(3, 320px);
+        }
+      }
+    
 </style>
